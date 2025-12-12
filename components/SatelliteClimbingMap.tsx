@@ -68,7 +68,7 @@ export default function SatelliteClimbingMap() {
   }, [isClient])
 
   if (!isClient || loading) {
-    return <div className="h-96 flex items-center justify-center">Loading satellite map...</div>
+    return <div className="h-full flex items-center justify-center">Loading satellite map...</div>
   }
 
   // World center coordinates
@@ -76,7 +76,7 @@ export default function SatelliteClimbingMap() {
   const zoom = 2
 
   return (
-    <div className="h-96 w-full">
+    <div className="h-full w-full">
       <MapContainer
         center={worldCenter}
         zoom={zoom}
