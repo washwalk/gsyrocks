@@ -117,6 +117,7 @@ export default function SatelliteClimbingMap() {
             src={selectedClimb.image_url}
             alt={selectedClimb.name}
             className="absolute inset-0 w-full h-full object-cover"
+            crossOrigin="anonymous"
             onError={() => console.log('Image failed to load:', selectedClimb.image_url)}
           />
           <div className="absolute bottom-0 left-0 right-0 bg-white p-4">
